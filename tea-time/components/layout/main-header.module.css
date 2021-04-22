@@ -1,0 +1,68 @@
+@font-face {
+    font-family: bubble;
+    src: url(../fonts/AssassinNinja-7BYyR.ttf);
+}
+
+.header{
+    background: #4B79A1;  
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  
+    background: linear-gradient(to right, #283E51, #4B79A1); 
+    width: 100%;
+    height: 200px;
+    box-shadow: 4px 0px 15px #2c292b;
+    font-family: monospace;
+}
+
+.logo{
+    font-family: bubble;
+    font-size: 70px;
+    color: #F8E9DD;
+    padding:  1.5% 1%;
+    text-shadow: 2px 0px 4px #BEAEAE;
+    border-bottom: solid;
+    border-color: #949494;
+}
+
+
+.header nav{
+    display: flex;
+}
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    
+}
+
+.header li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px 10px 0px 14px;
+    height: 350px;
+}
+
+.header a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #F8E9DD;
+    font-weight: bold;
+}
+
+.header a:hover,
+  .header a:active,
+  .header a.active {
+    text-shadow: 2px 0px 4px #BEAEAE;
+  }
+
+.input{
+      margin: 5px 0 0 1350px;
+  }
+
+.input:focus{
+    outline: none;
+}
