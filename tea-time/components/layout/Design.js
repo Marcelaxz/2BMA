@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import MainHeader from "./MainHeader";
 
-function Layout(props) {
+function Design(props) {
     return (
       <Fragment>
         <meta name="viewport" content="width=device-width, initial-scale=0.5" />
@@ -11,4 +11,4 @@ function Layout(props) {
     );
   }
   
-  export default Layout;
+  export default Design;
