@@ -1,0 +1,36 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+.comments li {
+  text-align: left;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.comments p {
+  margin: 0;
+}
+
+.comments li div {
+  text-align: right;
+  font-style: italic;
+}
+
+.comments address {
+  display: inline;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon svg {
+  width: 1rem;
+  height: 1rem;
+}

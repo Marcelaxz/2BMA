@@ -1,0 +1,9 @@
+.detail {
+    text-align: center;
+  }
+  
+.detail img {
+  width: 100%;
+  padding: 2% 25%;
+  box-shadow: 4px 5px 15px #2c292b;
+}

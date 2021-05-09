@@ -1,5 +1,5 @@
 import Link from "next/link";
-import classes from './main-header.module.css';
+import classes from './MainHeader.module.css';
 
 
 function MainHeader() {
@@ -26,9 +26,9 @@ function MainHeader() {
             <Link href="/series"> SÉRIES </Link>
           </li>
         </ul>
-        <form className = {classes.input}>
+        {/* <form className = {classes.input}>
           <input type="search" id="busc" name="busc" placeholder="Buscar" />
-        </form>
+        </form> */}
       </nav>
     </header>
   );
