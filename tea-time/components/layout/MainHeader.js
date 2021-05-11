@@ -5,7 +5,13 @@ import classes from './MainHeader.module.css';
 function MainHeader() {
   return (
     <header className = {classes.header}>
-      <div className = {classes.logo}> Tea Time! </div>
+      <div className = {classes.pad}>
+      <a href="/perfil" className = {classes.username}>
+          <img src = '../../images/profile-pic.png' className = {classes.userprofile}/>
+        <p>Usuário</p></a>
+        <div className = {classes.logo}><a href = '/'>Tea Time!</a></div>
+      </div>
+
       <br />
       <br />
       <nav>

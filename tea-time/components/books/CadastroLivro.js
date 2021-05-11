@@ -1,21 +1,23 @@
 import { useRef, useState } from "react";
-import classes from "./CadastroFilme.module.css";
+import classes from "./CadastroLivro.module.css";
 
-function Formulario(props) {
+function FormularioLivro(props) {
   const [isInvalid, setIsInvalid] = useState(false);
 
   const tituloInputRef = useRef();
   const nomeDInputRef = useRef();
-  const elencoInputRef = useRef();
+  const editoraInputRef = useRef();
+  const anoInputRef = useRef();
   const paisInputRef = useRef();
   const imageInputRef = useRef();
 
-  function cadastrarFilmeHandler(event) {
+  function cadastrarLivroHandler(event) {
     event.preventDefault();
 
     const enteredTitulo = tituloInputRef.current.value;
     const enteredNomeD = nomeDInputRef.current.value;
-    const enteredElenco = elencoInputRef.current.value;
+    const enteredEditora = editoraInputRef.current.value;
+    const enteredAno = anoInputRef.current.value;
     const enteredPais = paisInputRef.current.value;
     const enteredImage = imageInputRef.current.value;
 
@@ -24,8 +26,10 @@ function Formulario(props) {
       enteredTitulo.trim() === "" ||
       !enteredNomeD ||
       enteredNomeD.trim() === "" ||
-      !enteredElenco ||
-      enteredElenco.trim() === "" ||
+      !enteredEditora ||
+      enteredEditora.trim() === "" ||
+      !enteredAno ||
+      enteredAno.trim() === "" ||
       !enteredPais ||
       enteredPais.trim() === "" ||
       !enteredImage ||
@@ -35,32 +39,37 @@ function Formulario(props) {
       return;
     }
 
-    const filmeData = {
+    const livroData = {
       titulo: enteredTitulo,
       nomeD: enteredNomeD,
-      elenco: enteredElenco,
+      editora: enteredEditora,
+      ano: enteredAno,
       pais: enteredPais,
       image: enteredImage,
     };
 
-    props.onAddFilme(filmeData);
+    props.onAddLivro(livroData);
   }
 
   return (
-    <form className={classes.form} onSubmit={cadastrarFilmeHandler}>
+    <form className={classes.form} onSubmit={cadastrarLivroHandler}>
       <div className={classes.style}>
-        <h2 className={classes.h2}> Cadastro de Filmes </h2>
+        <h2 className={classes.h2}> Cadastro de Livros </h2>
         <div className={classes.control}>
-          <label htmlFor="titulo"> Título do Filme </label>
+          <label htmlFor="titulo"> Título do Livro </label>
           <input type="text" id="titulo" ref={tituloInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="nomeD"> Diretor </label>
-          <input type="text" id="nomeD" ref={nomeDInputRef} />
+          <label htmlFor="nomeA"> Autor(a) </label>
+          <input type="text" id="nomeA" ref={nomeDInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="elenco"> Elenco Principal </label>
-          <input type="text" id="elenco" ref={elencoInputRef} />
+          <label htmlFor="editora"> Editora </label>
+          <input type="text" id="editora" ref={editoraInputRef} />
+        </div>
+        <div className={classes.control}>
+          <label htmlFor="ano"> Ano </label>
+          <input type="text" id="ano" ref={anoInputRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor="pais"> País </label>
@@ -81,4 +90,4 @@ function Formulario(props) {
   );
 }
 
-export default Formulario;
+export default FormularioLivro;

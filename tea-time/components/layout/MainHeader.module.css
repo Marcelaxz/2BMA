@@ -62,7 +62,35 @@
 /* .input{
       margin: 5px 0 0 1350px;
   }
-
 .input input:focus{
     outline: none;
 } */
+
+.userprofile{
+    width: 3.6rem;
+    border-radius: 2rem;
+    margin: 0 0.4rem;
+    float: right;
+}
+
+.username{
+    float: right;
+    padding: 0.7rem;
+}
+
+.header p{
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.logo a{
+    font-size: 4.4rem;
+    font-weight: normal;
+}
+/*
+.pad div {
+    padding: 1rem;
+    margin: 0;
+}
+*/
+
