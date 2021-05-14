@@ -1,7 +1,7 @@
 import classes from "./cadastro-usuario.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useRef } from "react";
+import {  useRef } from "react";
 import { useRouter } from "next/router";
 
 async function createUser(nome, dataN, estado, cidade, email, user, password) {

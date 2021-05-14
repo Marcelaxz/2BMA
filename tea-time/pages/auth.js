@@ -1,8 +1,5 @@
-import { useRouter } from "next/router";
-import { getSession, session } from "next-auth/client";
-import { useEffect, useState } from "react";
+import { getSession} from "next-auth/client";
 import CadastroUser from "../components/cadastro/cadastro-usuario";
-import { getSession } from "next-auth/client";
 
 function AuthPage() {
   return <CadastroUser />;
