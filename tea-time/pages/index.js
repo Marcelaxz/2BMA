@@ -1,9 +1,10 @@
-function HomePage() {
+import LogarUser from '../components/signin/logar-usuario'
+function StartingPageContent() {
   return (
     <section>
-      <h3> Página Inicial </h3>
+      <LogarUser />
     </section>
   );
 }
 
-export default HomePage;
+export default StartingPageContent;

@@ -1,42 +1,59 @@
 import Link from "next/link";
-import classes from './MainHeader.module.css';
+import { Fragment } from "react";
+import classes from "./MainHeader.module.css";
+import React, { useState } from "react";
+import { useSession, signOut } from "next-auth/client";
 
+function MainHeader(props) {
+  const [session, loading] = useSession();
 
-function MainHeader() {
+  function logoutHandler() {
+    signOut();
+  }
+
   return (
-    <header className = {classes.header}>
-      <div className = {classes.pad}>
-      <a href="/perfil" className = {classes.username}>
-          <img src = '../../images/profile-pic.png' className = {classes.userprofile}/>
-        <p>Usuário</p></a>
-        <div className = {classes.logo}><a href = '/'>Tea Time!</a></div>
-      </div>
-
-      <br />
-      <br />
-      <nav>
-        <ul className = {classes.navbar}>
-          <li>
-            <Link href="/"> PÁGINA INICIAL </Link>
-          </li>
-          <li>
-            <Link href="/perfil"> MEU PERFIL </Link>
-          </li>
-          <li>
-            <Link href="/filmes"> FILMES </Link>
-          </li>
-          <li>
-            <Link href="/livros"> LIVROS </Link>
-          </li>
-          <li>
-            <Link href="/series"> SÉRIES </Link>
-          </li>
-        </ul>
-        {/* <form className = {classes.input}>
-          <input type="search" id="busc" name="busc" placeholder="Buscar" />
-        </form> */}
-      </nav>
-    </header>
+    <Fragment>
+      <header className={classes.header}>
+        <div className={classes.logo}> Tea Time! </div>
+        <br />
+        <br />
+        {!session && !loading && <h3 className={classes.h3}>WELCOME!</h3>}
+        <nav>
+          <ul className={classes.navbar}>
+            {session && (
+              <li>
+                <Link href="/pagina-inicial"> PÁGINA INICIAL </Link>
+              </li>
+            )}
+            {session && (
+              <li>
+                <Link href="/perfil"> MEU PERFIL </Link>
+              </li>
+            )}
+            {session && (
+              <li>
+                <Link href="/filmes"> FILMES </Link>
+              </li>
+            )}
+            {session && (
+              <li>
+                <Link href="/livros"> LIVROS </Link>
+              </li>
+            )}
+            {session && (
+              <li>
+                <Link href="/series"> SÉRIES </Link>
+              </li>
+            )}
+            {session && (
+              <li>
+                <a onClick={logoutHandler}>SAIR </a>
+              </li>
+            )}
+          </ul>
+        </nav>
+      </header>
+    </Fragment>
   );
 }
 
