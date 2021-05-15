@@ -14,10 +14,15 @@ function MainHeader(props) {
   return (
     <Fragment>
       <header className={classes.header}>
-        <div className={classes.logo}> Tea Time! </div>
+        {session && !loading && <div className = {classes.pad}>
+      <a href="/perfil" className = {classes.username}>
+          <img src = '../../images/profile-pic.png' className = {classes.userprofile}/>
+        <p>Usuário</p></a>
+      </div>}
+      <div className = {classes.logo}><a href = '/'>Tea Time!</a></div>
         <br />
         <br />
-        {!session && !loading && <h3 className={classes.h3}>WELCOME!</h3>}
+        {!session && !loading && <h3 className={classes.h3}>Bem-Vindo(a)!</h3>}
         <nav>
           <ul className={classes.navbar}>
             {session && (
