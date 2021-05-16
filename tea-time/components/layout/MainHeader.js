@@ -27,7 +27,7 @@ function MainHeader(props) {
           </div>
         )}
         <div className={classes.logo}>
-          <a href="/">Tea Time!</a>
+          <a href="/pagina-inicial">Tea Time!</a>
         </div>
         <br />
         <br />

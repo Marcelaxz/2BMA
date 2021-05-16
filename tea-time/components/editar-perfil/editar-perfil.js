@@ -6,11 +6,11 @@ function EditPerfil(){
             <div className = {classes.editar}>
             <h1>Editar Perfil do Usuário:</h1>
             </div>
-            <div className = {classes.bloco}>
-                <div className={classes.control} className = {classes.box1}>
+            <div className = {classes.style}>
+                <div className={classes.control}>
                     <h1>Alterar dados:</h1>
                 </div>
-                <form className={classes.form} className = {classes.box2}>
+                <form className={classes.form}>
                 <div className={classes.control}>
                     <label htmlFor="nome"> Nome Completo: </label>
                     <input type="text" id="nome" required />
@@ -46,11 +46,11 @@ function EditPerfil(){
             </form>
             <br/>
         </div>
-        <div className = {classes.bloco}>
-                <div className={classes.control} className = {classes.box1}>
+        <div className = {classes.style}>
+                <div className={classes.control}>
                     <h1>Alterar senha:</h1>
                 </div>
-                <form className={classes.form} className = {classes.box2}>
+                <form className={classes.form}>
                 <div className={classes.control}>
                     <label htmlFor="password">Senha Antiga: </label>
                     <input type="password" id="password" required />
