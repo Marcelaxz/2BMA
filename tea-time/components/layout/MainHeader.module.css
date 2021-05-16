@@ -97,3 +97,17 @@
     font-size: 4.4rem;
     font-weight: normal;
 }
+
+.foot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    color: white;
+    text-align: right;
+    padding: 1rem;
+}

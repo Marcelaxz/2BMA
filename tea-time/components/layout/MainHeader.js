@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import classes from "./MainHeader.module.css";
 import React, { useState } from "react";
 import { useSession, signOut } from "next-auth/client";
+import Image from "next/image";
 
 function MainHeader(props) {
   const [session, loading] = useSession();
@@ -14,15 +15,23 @@ function MainHeader(props) {
   return (
     <Fragment>
       <header className={classes.header}>
-        {session && !loading && <div className = {classes.pad}>
-      <a href="/perfil" className = {classes.username}>
-          <img src = '../../images/profile-pic.png' className = {classes.userprofile}/>
-        <p>Usuário</p></a>
-      </div>}
-      <div className = {classes.logo}><a href = '/'>Tea Time!</a></div>
+        {session && !loading && (
+          <div className={classes.pad}>
+            <a href="/perfil" className={classes.username}>
+              <img
+                src="../../images/profile-pic.png"
+                className={classes.userprofile}
+              />
+              <p>Usuário</p>
+            </a>
+          </div>
+        )}
+        <div className={classes.logo}>
+          <a href="/">Tea Time!</a>
+        </div>
         <br />
         <br />
-        {!session && !loading && <h3 className={classes.h3}>Bem-Vindo(a)!</h3>}
+        {!session && !loading && <h3 className={classes.h3}>BEM-VINDO(A)!</h3>}
         <nav>
           <ul className={classes.navbar}>
             {session && (
@@ -58,6 +67,17 @@ function MainHeader(props) {
           </ul>
         </nav>
       </header>
+      <footer className={classes.foot}>
+        <a href="https://github.com/Marcelaxz/2BMA">
+          <Image
+            className={classes.img}
+            width={13}
+            height={13}
+            src="/images/heart.png"
+          />
+          Made by 2BMA
+        </a>
+      </footer>
     </Fragment>
   );
 }

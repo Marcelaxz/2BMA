@@ -62,10 +62,15 @@ function CadastroUser() {
         enteredUser,
         enteredPassword
       );
+
+      if (!result.error) {
+        router.replace("/");
+      }
       console.log(result);
     } catch (error) {
       console.log(error);
     }
+
   }
 
   return (

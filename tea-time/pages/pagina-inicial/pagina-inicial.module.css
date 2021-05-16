@@ -1,0 +1,33 @@
+ .content{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.style {
+    margin: 3rem auto;
+    width: 95%;
+    max-width: 60rem;
+    border-radius: 4rem;
+    /* background-color: #2C5364; */
+    /* box-shadow: 3px 4px 10px #2c292b; */
+    padding: 2rem;
+    font-family: monospace;
+    color: black;
+    /* position: absolute; */
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .style h2{
+      text-shadow: 2px 0px 4px #BEAEAE;
+      font-size: 2rem;
+      text-align: center;
+  }
+
+  .style p{
+      font-size: 1rem;
+  }
