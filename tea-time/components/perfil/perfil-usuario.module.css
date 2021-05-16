@@ -1,0 +1,72 @@
+div .editar{
+    font-family: monospace;
+    font-weight: bolder;
+    color: #424242;
+    width: 4.6rem;
+    margin: 0rem 0.4rem;
+    padding: 0rem;
+    float: right;
+    cursor:pointer;
+}
+
+div .inicio{
+    font-family: monospace;
+    font-weight: bolder;
+    color: #424242;
+    padding: 0.5rem;
+}
+
+div .amigos{
+    text-align: center;
+    float: right;
+    font: inherit;
+    width: 25%;
+    padding: 0 ;
+    margin: 0.5rem  5.5rem 0.1rem 0.1rem;
+    background-color: #E6E6E6;
+    border: 0.5rem solid #174052;
+    border-radius: 1rem;
+}
+
+div .perfil{
+    text-align: center;
+    float: left;
+    font: inherit;
+    width: 50%;
+    margin: 1.5rem  6.5rem ;
+    background-color: #E6E6E6;
+    border: 0.5rem solid #174052;
+    border-radius: 1rem;
+}
+
+div .box1{
+    position: relative;
+    margin: 10;
+    color: white;
+    font-family: monospace;
+    text-shadow: 2px 0px 4px #BEAEAE;
+    font-weight: bold;
+    background-color: #174052;
+    padding: 1rem;
+}
+
+div .box2{
+    position: relative;
+    margin: 10;
+    color: #424242;
+    font-weight: bold;
+    background-color: #E6E6E6;
+    padding: 2.5rem;
+}
+
+div .sugestao{
+    text-align: center;
+    float: right;
+    font: inherit;
+    width: 25%;
+    padding: 0 ;
+    margin: 2rem  5.5rem 0.1rem 0.1rem;
+    background-color: #E6E6E6;
+    border: 0.5rem solid #174052;
+    border-radius: 1rem;
+}

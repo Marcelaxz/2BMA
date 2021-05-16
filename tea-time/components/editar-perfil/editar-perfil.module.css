@@ -1,0 +1,67 @@
+div .editar{
+    font-family: monospace;
+    font-weight: bolder;
+    color: #424242;
+    padding: 0.5rem;
+    margin: 0rem;
+    font-family: monospace;
+}
+
+div .bloco{
+    text-align: center;
+    float: left;
+    font: inherit;
+    width: 75%;
+    margin: 1.5rem  6.5rem ;
+    background-color: #E6E6E6;
+    border: 0.2rem solid #6E6E6E;
+    border-radius: 1rem;
+}
+
+div .control{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+}
+
+div .box1{
+    margin: 0;
+    color: white;
+    font-family: monospace;
+    text-shadow: 2px 0px 4px #BEAEAE;
+    font-weight: bold;
+    background-color: #174052;
+    padding: 2rem;
+}
+
+div .box2{
+    position: relative;
+    margin: 10;
+    color: #424242;
+    font-weight: bold;
+    background-color: #E6E6E6;
+    padding: 2.5rem;
+}
+
+.actions {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: #143746;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #143746;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #174052;
+    border-color: #174052;
+    text-shadow: 2px 0px 4px #BEAEAE;
+  }

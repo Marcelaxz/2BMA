@@ -1,7 +1,9 @@
+import UsuarioPage from "../../components/perfil/perfil-usuario";
+
 function ProfilePage() {
   return (
     <section>
-      <h3> Meu Perfil</h3>
+      <UsuarioPage/>
     </section>
   );
 }
