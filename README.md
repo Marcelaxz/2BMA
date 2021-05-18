@@ -20,7 +20,7 @@
 
 ### SOBRE
 <p align="justify">
-O Tea Time é uma rede social centrado em livros, séries e filmes, permitindo obter informações básicas relacionados a eles. Ele permite realizar avaliações, além de disponibilizar as avalições de outros usuários, facilitando que haja boas recomendações do que o usuário pode assitir ou ler. Disponibilizamos também a possibilidade do usuário cadastrar novos filmes, séries e livros que não foram localizados no site.
+O Tea Time é uma rede social centrada em livros, séries e filmes, permitindo obter informações básicas relacionadas a eles. Ele permite realizar avaliações, além de disponibilizar as avalições de outros usuários, facilitando que haja boas recomendações do que o usuário pode assitir ou ler. Disponibilizamos também a possibilidade do usuário cadastrar novos filmes, séries e livros que não foram localizados no site.
 </p>
 
 <br/>
