@@ -5,6 +5,7 @@ div .editar{
     padding: 0.5rem;
     margin: 0rem;
     font-family: monospace;
+    /* text-align: center; */
 }
 
 .content{
@@ -40,6 +41,7 @@ div .editar{
     margin-bottom: 0.5rem;
     font-size: 1rem;
     text-shadow: 2px 0px 4px #BEAEAE;
+    text-align: center;
 }
 
 .control label {

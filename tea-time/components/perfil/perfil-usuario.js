@@ -9,7 +9,7 @@ function UsuarioPage(){
         </div>
         <div className = {classes.inicio}>
         <h1>MEU PERFIL</h1>
-            <h2>Suas Avaliações:</h2>
+            <h2>Suas Avaliações</h2>
         </div>
         
         <div className = {classes.megadiv}>
@@ -59,7 +59,7 @@ function UsuarioPage(){
             </div>
 
             <div className = {classes.direita}>
-                <div className = {classes.amigos} className = {classes.box1}>
+                <div  className = {classes.box1}>
                         <h1>AMIGOS</h1>
                         <br/>
                     <ul>
