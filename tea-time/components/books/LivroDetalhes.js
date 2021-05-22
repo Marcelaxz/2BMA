@@ -1,4 +1,5 @@
 import classes from './LivroDetalhes.module.css';
+import Rating from '@material-ui/lab/Rating';
 
 function LivroDetalhes(props) {
   return (
@@ -9,6 +10,7 @@ function LivroDetalhes(props) {
       <p> <b> Editora: </b> {props.editora} </p>
       <p> <b> Ano: </b> {props.ano} </p>
       <p> <b> País: </b> {props.pais} </p>
+      <Rating />
     </section>
   );
 }

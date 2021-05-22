@@ -1,4 +1,5 @@
 import classes from './SerieDetalhes.module.css';
+import Rating from '@material-ui/lab/Rating';
 
 function SerieDetalhes(props) {
   return (
@@ -10,6 +11,7 @@ function SerieDetalhes(props) {
       <p> <b> País: </b> {props.pais} </p>
       <p> <b> Temporadas: </b> {props.temporada} </p>
       <p> <b> Ano: </b> {props.ano} </p>
+      <Rating />
     </section>
   );
 }
