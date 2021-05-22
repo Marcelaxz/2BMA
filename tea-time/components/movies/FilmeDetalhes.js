@@ -8,6 +8,7 @@ function FilmeDetalhes(props) {
       <p> <b> Diretor: </b> {props.nomeD} </p>
       <p> <b> Elenco: </b> {props.elenco} </p>
       <p> <b> País: </b> {props.pais} </p>
+      <p> <b> Ano: </b> {props.anoF} </p>
     </section>
   );
 }

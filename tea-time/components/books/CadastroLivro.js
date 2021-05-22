@@ -68,7 +68,7 @@ function FormularioLivro(props) {
           <input type="text" id="editora" ref={editoraInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="ano"> Ano </label>
+          <label htmlFor="ano"> Ano de Lançamento </label>
           <input type="text" id="ano" ref={anoInputRef} />
         </div>
         <div className={classes.control}>

@@ -17,6 +17,7 @@ function FilmeDetalhe(props) {
         nomeD={props.filmeData.nomeD}
         elenco={props.filmeData.elenco}
         pais={props.filmeData.pais}
+        anoF={props.filmeData.anoF}
       />
       <Comentarios eventId={props.filmeData.id} />
     </Fragment>
@@ -69,6 +70,7 @@ export async function getStaticProps(context) {
         nomeD: selectedFilme.nomeD,
         elenco: selectedFilme.elenco,
         pais: selectedFilme.pais,
+        anoF: selectedFilme.anoF,
         image: selectedFilme.image,
       },
     },

@@ -8,6 +8,7 @@ function Formulario(props) {
   const nomeDInputRef = useRef();
   const elencoInputRef = useRef();
   const paisInputRef = useRef();
+  const anoFInputRef = useRef();
   const imageInputRef = useRef();
 
   function cadastrarFilmeHandler(event) {
@@ -17,6 +18,7 @@ function Formulario(props) {
     const enteredNomeD = nomeDInputRef.current.value;
     const enteredElenco = elencoInputRef.current.value;
     const enteredPais = paisInputRef.current.value;
+    const enteredAnoF = anoFInputRef.current.value;
     const enteredImage = imageInputRef.current.value;
 
     if (
@@ -28,6 +30,8 @@ function Formulario(props) {
       enteredElenco.trim() === "" ||
       !enteredPais ||
       enteredPais.trim() === "" ||
+      !enteredAnoF ||
+      enteredAnoF.trim() === "" ||
       !enteredImage ||
       enteredImage === ""
     ) {
@@ -40,6 +44,7 @@ function Formulario(props) {
       nomeD: enteredNomeD,
       elenco: enteredElenco,
       pais: enteredPais,
+      anoF: enteredAnoF,
       image: enteredImage,
     };
 
@@ -65,6 +70,10 @@ function Formulario(props) {
         <div className={classes.control}>
           <label htmlFor="pais"> País </label>
           <input type="text" id="pais" ref={paisInputRef} />
+        </div>
+        <div className={classes.control}>
+          <label htmlFor="anoF"> Ano de Lançamento </label>
+          <input type="text" id="anoF" ref={anoFInputRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor="image"> URL da Imagem </label>
